@@ -1,0 +1,46 @@
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\TaskExecuter.exe
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\TaskExecuter.deps.json
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\TaskExecuter.runtimeconfig.json
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\TaskExecuter.dll
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\ref\TaskExecuter.dll
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\TaskExecuter.pdb
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\Newtonsoft.Json.dll
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\System.Data.SqlClient.dll
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\runtimes\win-x64\native\sni.dll
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\runtimes\win-x86\native\sni.dll
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Alamo\TaskExecuter\TaskExecuter\bin\Release\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Alamo\TaskExecuter\TaskExecuter\obj\Release\net6.0\TaskExecuter.csproj.AssemblyReference.cache
+C:\Alamo\TaskExecuter\TaskExecuter\obj\Release\net6.0\TaskExecuter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Alamo\TaskExecuter\TaskExecuter\obj\Release\net6.0\TaskExecuter.AssemblyInfoInputs.cache
+C:\Alamo\TaskExecuter\TaskExecuter\obj\Release\net6.0\TaskExecuter.AssemblyInfo.cs
+C:\Alamo\TaskExecuter\TaskExecuter\obj\Release\net6.0\TaskExecuter.csproj.CoreCompileInputs.cache
+C:\Alamo\TaskExecuter\TaskExecuter\obj\Release\net6.0\TaskExecuter.csproj.CopyComplete
+C:\Alamo\TaskExecuter\TaskExecuter\obj\Release\net6.0\TaskExecuter.dll
+C:\Alamo\TaskExecuter\TaskExecuter\obj\Release\net6.0\ref\TaskExecuter.dll
+C:\Alamo\TaskExecuter\TaskExecuter\obj\Release\net6.0\TaskExecuter.pdb
+C:\Alamo\TaskExecuter\TaskExecuter\obj\Release\net6.0\TaskExecuter.genruntimeconfig.cache
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\TaskExecuter.exe
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\TaskExecuter.deps.json
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\TaskExecuter.runtimeconfig.json
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\TaskExecuter.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\ref\TaskExecuter.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\TaskExecuter.pdb
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\Newtonsoft.Json.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\System.Data.SqlClient.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\runtimes\win-x64\native\sni.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\runtimes\win-x86\native\sni.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\bin\Release\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\obj\Release\net6.0\TaskExecuter.csproj.AssemblyReference.cache
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\obj\Release\net6.0\TaskExecuter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\obj\Release\net6.0\TaskExecuter.AssemblyInfoInputs.cache
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\obj\Release\net6.0\TaskExecuter.AssemblyInfo.cs
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\obj\Release\net6.0\TaskExecuter.csproj.CoreCompileInputs.cache
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\obj\Release\net6.0\TaskExecuter.csproj.CopyComplete
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\obj\Release\net6.0\TaskExecuter.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\obj\Release\net6.0\ref\TaskExecuter.dll
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\obj\Release\net6.0\TaskExecuter.pdb
+C:\Alamo\TaskExecuter v4\TaskExecuter v4\TaskExecuter\obj\Release\net6.0\TaskExecuter.genruntimeconfig.cache

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TaskExecuter": {
+      "commandName": "Project",
+      "commandLineArgs": "Filepath=C:\\Alamo\\TaskExecuterv2\\TaskExecuter\\Tasks\\enviodeprecios.json"
+    }
+  }
+}

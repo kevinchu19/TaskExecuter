@@ -1,0 +1,80 @@
+
+Execution time: 14:50:44.9255635
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+NO SE ENCONTRO EL ARCHIVO: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 14:51:31.6694590
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+NO SE ENCONTRO EL ARCHIVO: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 14:51:51.0375711
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 14:52:50.5207870
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 14:55:24.3153385
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 14:56:42.8543125
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 14:59:06.0680788
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:20:41.5667375
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:25:58.9133283
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:26:57.6401397
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:35:06.9030493
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:35:26.8609625
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:35:32.2167359
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:37:38.3571185
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:38:36.2960903
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:39:18.7399738
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:39:50.7903554
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:40:16.3566602
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+
+
+Execution time: 15:48:02.3222691
+Task JSON path: C:\Alamo\TaskExecuterv2\TaskExecuter\Tasks\enviodeprecios.json
+

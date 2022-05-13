@@ -1,0 +1,86 @@
+{
+  "$type": "TaskExecuter.Entities.TaskExecution, TaskExecuter",
+  "Name": "Recuperacion de pedidos",
+  "Steps": {
+    "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.Step, TaskExecuter]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "TaskExecuter.Entities.DBQueryStep, TaskExecuter",
+        "Sentence": "Alm_GetPedidosFromVTEXRequest",
+        "DbConnectionName": "SoftLandLogicPPSS",
+        "QueryParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "@Limit": "100"
+        },
+        "DataResult": null,
+        "ExecutionOrder": 1,
+        "Name": "Alm_GetPedidosFromVTEXRequest",
+        "Type": "DBQueryStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null,
+        "PreviousStepReference": ""
+      },
+      {
+        "$type": "TaskExecuter.Entities.ApiEndpointStep, TaskExecuter",
+        "Url": "https://previsoraarg.vtexcommercestable.com.br/api/oms/pvt/orders/1223220899992-01",
+        "Verb": "GET",
+        "Headers": {
+          "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter",
+              "Name": "X-VTEX-API-AppKey",
+              "Value": "vtexappkey-previsoraarg-TDWIUM"
+            },
+            {
+              "$type": "TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter",
+              "Name": "X-VTEX-API-AppToken",
+              "Value": "ZIQPQYZWVPTAIPZEWGTPYOOOXKFXSEFGSHVPLHZZNOPGSYWUAMZFOIMKTBSGSBEQJNHATKTPGUBKZIWZOKXFFZRJVLVJOTGMJYWEQVBPTKZUHCLLETRIDYLKWYFIOJAN"
+            }
+          ]
+        },
+        "ExecutionOrder": 2,
+        "Name": "VTEXEndpoint",
+        "Type": "ApiEndpointStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null,
+        "PreviousStepReference": "Alm_GetPedidosFromVTEXRequest"
+      }
+    ]
+  },
+  "DbConnections": {
+    "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.DbConnection, TaskExecuter]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "TaskExecuter.Entities.DbConnection, TaskExecuter",
+        "Name": "SoftLandLogicPPSS",
+        "Driver": "SQL",
+        "ConnectionString": "Data Source=DESARR;Initial Catalog=SoftLandLogicPPSS;User Id=sa;Password=9876Pass",
+        "AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+        "AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+        "AdoNetCommandTimeOut": 0,
+        "ParameterPrefix": "@",
+        "PkFunction": "SET @newId = SCOPE_IDENTITY()"
+      }
+    ]
+  },
+  "LogDbConnection": {
+    "$type": "TaskExecuter.Entities.LogDbConnection, TaskExecuter",
+    "DatabaseName": "SoftLandLogicPPSS",
+    "Schema": "dbo",
+    "TableName": "LogTaskExecuter",
+    "ConnectionString": "Data Source=DESARR;Initial Catalog=SoftLandLogicPPSS;User Id=sa;Password=9876Pass",
+    "AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+    "AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+    "AdoNetCommandTimeOut": 0
+  },
+  "ExternalParameters": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  }
+}

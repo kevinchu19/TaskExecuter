@@ -1,0 +1,115 @@
+{
+	"$type": "TaskExecuter.Entities.TaskExecution, TaskExecuter",
+	"Name": "Envio de Precios",
+	"Steps": {
+		"$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.Step, TaskExecuter]], System.Private.CoreLib",
+		"$values": [
+			{
+				"$type": "TaskExecuter.Entities.DBQueryStep, TaskExecuter",
+				"Sentence": "Alm_PutPricesForVTEXRequest",
+				"DbConnectionName": "ApiIntercap",
+				"QueryParameters": {
+					"$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+					"@Limit": "100"
+				},
+				"DataResult": null,
+				"ExecutionOrder": 1,
+				"Name": "Alm_PutPricesForVTEXRequest",
+				"Type": "DBQueryStep",
+				"ExternalParameters": {
+					"$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+				},
+				"ReturnResult": null,
+				"PreviousStepReference": ""
+			},
+			{
+				"$type": "TaskExecuter.Entities.ApiEndpointStep, TaskExecuter",
+				"Url": "https://previsoraarg.vtexcommercestable.com.br/api/pricing/prices/{skuId}",
+				"Verb": "PUT",
+				"Headers": {
+					"$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter]], System.Private.CoreLib",
+					"$values": [
+						{
+							"$type": "TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter",
+							"Name": "X-VTEX-API-AppKey",
+							"Value": "vtexappkey-previsoraarg-TDWIUM"
+						},
+						{
+							"$type": "TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter",
+							"Name": "X-VTEX-API-AppToken",
+							"Value": "ZIQPQYZWVPTAIPZEWGTPYOOOXKFXSEFGSHVPLHZZNOPGSYWUAMZFOIMKTBSGSBEQJNHATKTPGUBKZIWZOKXFFZRJVLVJOTGMJYWEQVBPTKZUHCLLETRIDYLKWYFIOJAN"
+						}
+					]
+				},
+				"RouteVariables": {
+					"$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointParam, TaskExecuter]],System.Private.CoreLib",
+					"$values": [
+						{
+							"$type": "TaskExecuter.Entities.ApiEndpointParam, TaskExecuter",
+							"Name": "{skuId}",
+							"Value": "Id"
+						}
+					]
+				},
+				"ExecutionOrder": 2,
+				"Name": "VTEXEndpoint",
+				"Type": "ApiEndpointStep",
+				"ExternalParameters": {
+					"$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+				},
+				"ReturnResult": null,
+				"PreviousStepReference": "Alm_PutPricesForVTEXRequest"
+			},
+			{
+				"$type": "TaskExecuter.Entities.DBQueryStep, TaskExecuter",
+				"Sentence": "Alm_PutPricesForVTEXResponse",
+				"DbConnectionName": "ApiIntercap",
+				"QueryParameters": {
+					"$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+					"@HttpStatusResponse": "",
+					"@Id": ""
+				},
+				"DataResult": null,
+				"ExecutionOrder": 3,
+				"Name": "Alm_PutPricesForVTEXResponse",
+				"Type": "DBQueryStep",
+				"ExternalParameters": {
+					"$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+				},
+				"ReturnResult": null,
+				"PreviousStepReference": "VTEXEndpoint"
+			}
+		]
+	},
+	"DbConnections": {
+		"$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.DbConnection, TaskExecuter]], System.Private.CoreLib",
+		"$values": [
+			{
+				"$type": "TaskExecuter.Entities.DbConnection, TaskExecuter",
+				"Name": "ApiIntercap",
+				"Driver": "SQL",
+				"ConnectionString": "Data Source=VPS-1871862-X\\SQL2017;Initial Catalog=ApiIntercap;persist security info=True;Integrated Security=SSPI;",
+				"AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+				"AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+				"AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+				"AdoNetCommandTimeOut": 0,
+				"ParameterPrefix": "@",
+				"PkFunction": "SET @newId = SCOPE_IDENTITY()"
+			}
+		]
+	},
+	"LogDbConnection": {
+		"$type": "TaskExecuter.Entities.LogDbConnection, TaskExecuter",
+		"DatabaseName": "ApiIntercap",
+		"Schema": "dbo",
+		"TableName": "LogTaskExecuter",
+		"ConnectionString": "Data Source=VPS-1871862-X\\SQL2017;Initial Catalog=ApiIntercap;persist security info=True;Integrated Security=SSPI;",
+		"AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+		"AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+		"AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+		"AdoNetCommandTimeOut": 0
+	},
+	"ExternalParameters": {
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+	}
+}

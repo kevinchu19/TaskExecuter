@@ -1,0 +1,43 @@
+{
+	"JsonFileName": null,
+	"Steps": [{
+		"Name": "Step1",
+		"OriginDbConnectionName": "",
+		"DestinyDbConnectionName": "",
+		"OriginQuery": "Query0",
+		"DestinyQuery": "Query1",
+		"OriginReturn": null,
+		"DestinyReturn": null,
+		"ApiEndpoint": "WWW"
+	}, {
+		"Name": "Step2",
+		"OriginDbConnectionName": "",
+		"DestinyDbConnectionName": "",
+		"OriginQuery": "Query2",
+		"DestinyQuery": "Query3",
+		"OriginReturn": null,
+		"DestinyReturn": null,
+		"ApiEndpoint": "WWW"
+	}],
+	"DbConnections": [{
+		"Name": "DB1",
+		"Driver": "",
+		"ConnectionString": "",
+		"AdoNetAssemblyName": "",
+		"AdoNetConnectionTypeName": "",
+		"AdoNetCommandTypeName": "",
+		"AdoNetCommandTimeOut": "",
+		"ParameterPrefix": "",
+		"PkFunction": ""
+	}, {
+		"Name": "DB2",
+		"Driver": "",
+		"ConnectionString": "",
+		"AdoNetAssemblyName": "",
+		"AdoNetConnectionTypeName": "",
+		"AdoNetCommandTypeName": "",
+		"AdoNetCommandTimeOut": "",
+		"ParameterPrefix": "",
+		"PkFunction": ""
+	}]
+}

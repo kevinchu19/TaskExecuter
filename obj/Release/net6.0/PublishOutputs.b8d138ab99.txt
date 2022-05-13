@@ -1,0 +1,12 @@
+C:\Alamo\TaskExecuter\Publish\TaskExecuter.exe
+C:\Alamo\TaskExecuter\Publish\TaskExecuter.dll
+C:\Alamo\TaskExecuter\Publish\TaskExecuter.deps.json
+C:\Alamo\TaskExecuter\Publish\TaskExecuter.runtimeconfig.json
+C:\Alamo\TaskExecuter\Publish\TaskExecuter.pdb
+C:\Alamo\TaskExecuter\Publish\Newtonsoft.Json.dll
+C:\Alamo\TaskExecuter\Publish\System.Data.SqlClient.dll
+C:\Alamo\TaskExecuter\Publish\runtimes\win-arm64\native\sni.dll
+C:\Alamo\TaskExecuter\Publish\runtimes\win-x64\native\sni.dll
+C:\Alamo\TaskExecuter\Publish\runtimes\win-x86\native\sni.dll
+C:\Alamo\TaskExecuter\Publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Alamo\TaskExecuter\Publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
