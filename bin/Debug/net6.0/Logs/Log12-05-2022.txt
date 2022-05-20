@@ -1,0 +1,9 @@
+
+Execution time: 22:34:08.9756363
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\bin\Debug\net6.0\tasks\enviodeclientes.json
+
+
+Execution time: 22:34:56.6146756
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\bin\Debug\net6.0\tasks\enviodeclientes.json
+
+Incorrect syntax near ': \"\\nSELECT Id,Email FROM User WHERE Email in (1)\\n                                ^\\nERROR at Row:1:Column:33\\nvalue of fil'.

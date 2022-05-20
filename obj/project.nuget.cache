@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M4IMeliGR1xwbrguTQUM3Lp5Pcq2RQqD3647iBQKATZ9lbHUqXUUHKdCgfKyVBMEOYwZrEQt07BHdDu6mDdrWw==",
+  "dgSpecHash": "Mk8ivT9jnmNEZD4wALSKGCzP3Eu7nEeozfeOJqbYdjJcyIYi3l/aQDAMRWo6GAVCgzfRkTEwyWYWEm+QxLEzvQ==",
   "success": true,
-  "projectFilePath": "C:\\Alamo\\TaskExecuter v4\\TaskExecuter v4\\TaskExecuter\\TaskExecuter.csproj",
+  "projectFilePath": "C:\\Users\\dattaguest\\source\\repos\\TaskExecuter\\TaskExecuter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dattaguest\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\dattaguest\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

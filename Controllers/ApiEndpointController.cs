@@ -84,7 +84,7 @@ namespace TaskExecuter.Controllers
             logDBEntity.StepType = "Api Endpoint";
             logDBEntity.Endpoint = pStep.Url.ToString();
             logDBEntity.JsonRequestEndpoint = pJsonRequest;
-            logDBEntity.Resultset = jsonResult;
+            logDBEntity.Resultset = jsonResult.Replace("'","");
             logDBEntity.StatusCode = pStep.Response.StatusCode.ToString();
 
             TaskFileController.WriteLog(logDBEntity);

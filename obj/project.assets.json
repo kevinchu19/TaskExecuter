@@ -1510,11 +1510,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Alamo\\TaskExecuter v4\\TaskExecuter v4\\TaskExecuter\\TaskExecuter.csproj",
+      "projectUniqueName": "C:\\Users\\dattaguest\\source\\repos\\TaskExecuter\\TaskExecuter.csproj",
       "projectName": "TaskExecuter",
-      "projectPath": "C:\\Alamo\\TaskExecuter v4\\TaskExecuter v4\\TaskExecuter\\TaskExecuter.csproj",
+      "projectPath": "C:\\Users\\dattaguest\\source\\repos\\TaskExecuter\\TaskExecuter.csproj",
       "packagesPath": "C:\\Users\\dattaguest\\.nuget\\packages\\",
-      "outputPath": "C:\\Alamo\\TaskExecuter v4\\TaskExecuter v4\\TaskExecuter\\obj\\",
+      "outputPath": "C:\\Users\\dattaguest\\source\\repos\\TaskExecuter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
