@@ -2,7 +2,7 @@
   "profiles": {
     "TaskExecuter": {
       "commandName": "Project",
-      "commandLineArgs": "Filepath=C:\\Alamo\\TaskExecuterv2\\TaskExecuter\\Tasks\\enviodeprecios.json"
+      "commandLineArgs": "Filepath=C:\\Users\\dattaguest\\source\\repos\\TaskExecuter\\Tasks\\enviodeproductosPetroarsa.json"
     }
   }
 }

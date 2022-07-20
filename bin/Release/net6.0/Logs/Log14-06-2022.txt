@@ -1,0 +1,16 @@
+
+Execution time: 11:23:32.2354332
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\recuperapedidoprevisora.json
+
+
+Execution time: 11:24:22.0047542
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\recuperapedidoprevisora.json
+
+
+Execution time: 11:25:09.0058120
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\recuperapedidoprevisora.json
+
+
+Execution time: 11:25:31.1045334
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\recuperapedidoprevisora.json
+

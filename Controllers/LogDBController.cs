@@ -109,6 +109,9 @@ namespace TaskExecuter.Controllers
             _logDbConnection = logDbConnection;
             GetConnection();
 
+            logDBEntity.Resultset = logDBEntity.Resultset == null ? "" : logDBEntity.Resultset;
+
+
             if (_connection.State == ConnectionState.Open)
             {
                 String comandoInsercion = "INSERT INTO " + _logDbConnection.DatabaseName + "." + _logDbConnection.Schema + "." + _logDbConnection.TableName + " (" +
@@ -127,15 +130,15 @@ namespace TaskExecuter.Controllers
                                         "SELECT " +
                                         "GETDATE() AS ExecutionDateTime, " +
                                         "'" + taskName + "'" + " AS TaskName, " +
-                                        "'" + logDBEntity.StepName + "'" + " AS StepName, "+
-                                        "'" + logDBEntity.StepType + "'" + " AS StepType, " +
-                                        "'" + logDBEntity.StepOrder + "'" + "  AS StepOrder, " +
-                                        "'" + logDBEntity.StoredProcedure + "'" + " AS StoredProcedure, " +
-                                        "'" + logDBEntity.Parameters + "'" + " AS Parameters, " +
-                                        "'" + logDBEntity.Endpoint + "'" + " AS Endpoint, " +
-                                        "'" + logDBEntity.JsonRequestEndpoint + "'" + " AS JsonRequestEndpoint, " +
-                                        "'" + logDBEntity.Resultset + "'" + " AS Resultset, " +
-                                        "'" + logDBEntity.StatusCode + "'" + " AS StatusCode ";
+                                        "'" + logDBEntity.StepName.Replace("'","''") + "'" + " AS StepName, "+
+                                        "'" + logDBEntity.StepType.Replace("'", "''") + "'" + " AS StepType, " +
+                                        "'" + logDBEntity.StepOrder.Replace("'", "''") + "'" + "  AS StepOrder, " +
+                                        "'" + logDBEntity.StoredProcedure.Replace("'", "''") + "'" + " AS StoredProcedure, " +
+                                        "'" + logDBEntity.Parameters.Replace("'", "''") + "'" + " AS Parameters, " +
+                                        "'" + logDBEntity.Endpoint.Replace("'", "''") + "'" + " AS Endpoint, " +
+                                        "'" + logDBEntity.JsonRequestEndpoint.Replace("'", "''") + "'" + " AS JsonRequestEndpoint, " +
+                                        "'" + logDBEntity.Resultset.Replace("'", "''") + "'" + " AS Resultset, " +
+                                        "'" + logDBEntity.StatusCode.Replace("'", "''") + "'" + " AS StatusCode ";
                 try
                 {
                     IDbCommand newCommand = _connection.CreateCommand();

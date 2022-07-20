@@ -71,12 +71,19 @@ namespace TaskExecuter.Controllers
         public void saveLog(Entities.ApiEndpointStep pStep, string pJsonRequest)
         {
             string jsonResult = "";
-            using (Stream responseStream = pStep.Response.GetResponseStream())
-            {
-                StreamReader reader = new StreamReader(responseStream, Encoding.UTF8);
-                jsonResult = reader.ReadToEnd();
-            }
+            string statusCode = "";
 
+            if (pStep.Response != null)
+            {
+                using (Stream responseStream = pStep.Response.GetResponseStream())
+                {
+                    StreamReader reader = new StreamReader(responseStream, Encoding.UTF8);
+                    jsonResult = reader.ReadToEnd();
+                    statusCode = pStep.Response.StatusCode.ToString();
+                }
+            }
+            
+            jsonResult = jsonResult == null ? "" : jsonResult;
             Entities.LogDBEntity logDBEntity = new Entities.LogDBEntity();
 
             logDBEntity.StepOrder = pStep.ExecutionOrder.ToString();
@@ -85,7 +92,7 @@ namespace TaskExecuter.Controllers
             logDBEntity.Endpoint = pStep.Url.ToString();
             logDBEntity.JsonRequestEndpoint = pJsonRequest;
             logDBEntity.Resultset = jsonResult.Replace("'","");
-            logDBEntity.StatusCode = pStep.Response.StatusCode.ToString();
+            logDBEntity.StatusCode = statusCode;
 
             TaskFileController.WriteLog(logDBEntity);
         }

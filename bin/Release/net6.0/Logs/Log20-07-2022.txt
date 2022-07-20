@@ -1,0 +1,134 @@
+
+Execution time: 11:01:20.3455661
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+NO SE ENCONTRO EL ARCHIVO: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:01:39.8854298
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+NO SE ENCONTRO EL ARCHIVO: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:02:07.4227771
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+NO SE ENCONTRO EL ARCHIVO: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:02:26.8602668
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+NO SE ENCONTRO EL ARCHIVO: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:02:51.0539208
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+Invalid object name 'TEST_SALESF.INFORMATION_SCHEMA.TABLES'.
+Database 'TEST_SALESF' does not exist.
+No se pudo crear/acceder la tabla de logueo, se detiene la ejecucion.
+
+Execution time: 11:03:13.7325525
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:37:37.7352789
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:38:00.2870755
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:38:36.3832958
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:39:58.8202956
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:40:07.0093468
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:42:50.5968182
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:44:45.5528833
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:48:11.0462864
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:49:16.7080637
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:49:52.0640585
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:51:52.3752438
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:52:19.0264915
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:52:44.3899891
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:53:17.3464638
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:54:15.9749313
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:54:44.8436906
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:55:01.3528403
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:55:22.9658189
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:55:52.3075402
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:55:57.9186535
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:56:48.5668031
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 11:59:28.3037386
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 12:01:19.7221717
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+The identifier that starts with '{"DisplayUrl":null,"ExternalId":"AC|CAAQMA","IsActive":true,"Name":"Kgs Maíz (Canje Agroquímicos)","ProductCode":"CAAQMA","Quant' is too long. Maximum length is 128.
+Incorrect syntax near '}'.
+Unclosed quotation mark after the character string ' AS Resultset, ' AS StatusCode '.
+
+Execution time: 12:03:11.4969746
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
