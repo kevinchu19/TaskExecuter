@@ -132,3 +132,7 @@ Unclosed quotation mark after the character string ' AS Resultset, ' AS StatusCo
 Execution time: 12:03:11.4969746
 Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
 
+
+Execution time: 14:58:59.7844681
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+

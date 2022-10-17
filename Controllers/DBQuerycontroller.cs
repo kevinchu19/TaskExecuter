@@ -68,12 +68,17 @@ namespace TaskExecuter.Controllers
             }
             else
             {
-                foreach (var parameterValue in pResultPair)
+                foreach (var parameterValue in _step.QueryParameters)
                 {
-                    IDbDataParameter parameter = newCommand.CreateParameter();
-                    parameter.ParameterName = parameterValue.Key;
-                    parameter.Value = parameterValue.Value == null ? DBNull.Value : parameterValue.Value;
-                    newCommand.Parameters.Add(parameter);
+                    //KT 17/8/2022: Machea por nombre el parametro del stored procedure con valores de campos del previous step
+                    if (pResultPair.Where(x=>x.Key == parameterValue.Key) != null)
+                    {
+                        IDbDataParameter parameter = newCommand.CreateParameter();
+                        parameter.ParameterName = parameterValue.Key;
+                        parameter.Value = parameterValue.Value == null ? DBNull.Value : pResultPair[parameterValue.Key.Replace("@","")];
+                        newCommand.Parameters.Add(parameter);
+                    }
+                    
                 }
             }
             return newCommand;
@@ -119,9 +124,11 @@ namespace TaskExecuter.Controllers
             }
             else
             {
-                foreach (var parameterValue in pResult)
+                foreach (var parameterValue in _step.QueryParameters)
                 {
-                    logDBEntity.Parameters += "Parameter name: " + parameterValue.Key + " value: " + parameterValue.Value+ " ";
+                    //KT 17/8/2022: Machea por nombre el parametro del stored procedure con valores de campos del previous step
+                    if (pResult.Where(x => x.Key == parameterValue.Key) != null)
+                        logDBEntity.Parameters += "Parameter name: " + parameterValue.Key + " value: " + pResult[parameterValue.Key.Replace("@", "")] + " ";
                 }
             }
             foreach (var item in pStep.ReturnResult)

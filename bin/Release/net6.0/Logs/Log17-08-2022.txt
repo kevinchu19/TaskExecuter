@@ -1,0 +1,20 @@
+
+Execution time: 00:01:42.2184571
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 00:02:28.5921295
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 00:03:30.9816039
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 00:05:08.6909708
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+
+
+Execution time: 00:05:59.2789242
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeproductosPetroarsa.json
+

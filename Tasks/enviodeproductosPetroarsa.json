@@ -10,7 +10,7 @@
         "DbConnectionName": "Petroarsa_Test",
         "QueryParameters": {
           "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
-          "@Limit": "1"
+          "@Limit": "3"
         },
         "DataResult": null,
         "ExecutionOrder": 1,
@@ -27,15 +27,15 @@
         "Url": "http://45.227.68.126:8000/test/producto",
         "Verb": "POST",
         "Headers": {
-					"$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter]], System.Private.CoreLib",
-					"$values": [
-						{
-							"$type": "TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter",
-							"Name": "x-access-token",
-							"Value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicGV0cm9hcnNhIn0.0HGHW-0uTueIlXSc5OdNVvH0VC3pRctdqwhtkZiGcX8"
-						}
-					]
-				},
+          "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter",
+              "Name": "x-access-token",
+              "Value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicGV0cm9hcnNhIn0.0HGHW-0uTueIlXSc5OdNVvH0VC3pRctdqwhtkZiGcX8"
+            }
+          ]
+        },
         "ExecutionOrder": 2,
         "Name": "VTEXEndpoint",
         "Type": "ApiEndpointStep",
@@ -44,6 +44,25 @@
         },
         "ReturnResult": null,
         "PreviousStepReference": "GetProductosForSalesForceRequest"
+      },
+      {
+        "$type": "TaskExecuter.Entities.DBQueryStep, TaskExecuter",
+        "Sentence": "SM_SP_SF_STMPDH_Response",
+        "DbConnectionName": "Petroarsa_Test",
+        "QueryParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "@HttpStatusResponse": "",
+          "@ExternalId": ""
+        },
+        "DataResult": null,
+        "ExecutionOrder": 3,
+        "Name": "SM_SP_SF_STMPDH_Response",
+        "Type": "DBQueryStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null,
+        "PreviousStepReference": "VTEXEndpoint"
       }
     ]
   },

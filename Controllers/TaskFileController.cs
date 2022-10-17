@@ -160,11 +160,21 @@ namespace TaskExecuter.Controllers
 
 
                                         var auxResultPair = new Dictionary<string, object?>();
-                                        auxResultPair.Add("HttpStatusResponse", stepApi.Response.StatusCode);
+                                        auxResultPair.Add("HttpStatusResponse", stepApi.Response?.StatusCode);
 
                                         foreach (var results in stepApi.RouteVariables)
                                         {
                                             auxResultPair.Add(results.Value, row.Where(x => x.Key == results.Value).FirstOrDefault().Value);
+                                        }
+
+                                        //KT 17/8/2022: Para que pase como parametro de dbquerystep posterior cualquier valor de campo del body
+
+                                        foreach (var field in row)
+                                        {
+                                            if (!auxResultPair.ContainsKey(field.Key)) {
+                                                auxResultPair.Add(field.Key, field.Value);
+                                            }
+                                            
                                         }
 
                                         item.ReturnResult.Add(auxResultPair);

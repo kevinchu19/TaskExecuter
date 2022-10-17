@@ -12,6 +12,7 @@ namespace TaskExecuter.Entities
     {
         internal HttpWebResponse? Response { get; set; }
         private Dictionary<String, String> ResponseResults { get; set; } = new Dictionary<String, String>();
+
         public String Url { get; set; } = String.Empty;
         public String Verb { get; set; } = String.Empty;
         public List<ApiEndpointHeader> Headers { get; set; } = new List<ApiEndpointHeader>();
