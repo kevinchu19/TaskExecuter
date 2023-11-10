@@ -1,0 +1,12 @@
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\TaskExecuter.exe
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\TaskExecuter.dll
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\TaskExecuter.deps.json
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\TaskExecuter.runtimeconfig.json
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\TaskExecuter.pdb
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\Newtonsoft.Json.dll
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\System.Data.SqlClient.dll
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\runtimes\win-arm64\native\sni.dll
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\runtimes\win-x64\native\sni.dll
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\runtimes\win-x86\native\sni.dll
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ktchu\source\repos\TaskExecuter\bin\Release\net6.0\Publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

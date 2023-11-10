@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using TaskExecuter.Entities;
 
 namespace TaskExecuter.Controllers
 {
@@ -33,7 +34,9 @@ namespace TaskExecuter.Controllers
             request.ContentType = "application/json";
             request.Method = step.Verb;
 
-            foreach (var item in step.Headers)
+
+
+            foreach (var item in ResolveHeaders(step.Headers, result))
             {
                 request.Headers.Add(item.Name, item.Value);
 
@@ -66,6 +69,28 @@ namespace TaskExecuter.Controllers
 
             return step;
 
+        }
+
+        private IEnumerable<ApiEndpointHeader>? ResolveHeaders(List<ApiEndpointHeader>? headers, Dictionary<string, object>? result)
+        {
+            //Si el paso anterior contiene un campo $headers con una coleccion, toma el json de dicho campo para armar los headers
+            object dynamicHeaders;
+            if (result.TryGetValue("$headers", out dynamicHeaders))
+            {
+                result.Remove("$headers");
+                try
+                {
+                    return JsonConvert.DeserializeObject<IEnumerable<ApiEndpointHeader>>(dynamicHeaders.ToString());
+                }
+                catch (Exception)
+                {
+
+                    return headers;
+                }
+                
+            };
+
+            return headers;
         }
 
         public void saveLog(Entities.ApiEndpointStep pStep, string pJsonRequest)

@@ -1,0 +1,38 @@
+
+Execution time: 23:09:47.0711415
+Task JSON path: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+NO SE ENCONTRO EL ARCHIVO: C:\Users\dattaguest\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+
+Execution time: 23:10:53.6739497
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+
+Execution time: 23:13:26.4725634
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+
+Execution time: 23:20:20.7999453
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+
+Execution time: 23:29:11.2645216
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+
+Execution time: 23:30:26.7225212
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+
+Execution time: 23:34:23.4865111
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+
+Execution time: 23:36:38.6066850
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+
+Execution time: 23:57:09.2432402
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+

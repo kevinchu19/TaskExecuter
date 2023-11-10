@@ -6,8 +6,8 @@
     "$values": [
       {
         "$type": "TaskExecuter.Entities.DBQueryStep, TaskExecuter",
-        "Sentence": "SM_SP_SF_VTMCLH",
-        "DbConnectionName": "Petroarsa_Test",
+        "Sentence": "test",
+        "DbConnectionName": "CAC",
         "QueryParameters": {
           "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
           "@Limit": "1"
@@ -29,11 +29,7 @@
         "Headers": {
 					"$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter]], System.Private.CoreLib",
 					"$values": [
-						{
-							"$type": "TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter",
-							"Name": "x-access-token",
-							"Value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicGV0cm9hcnNhIn0.0HGHW-0uTueIlXSc5OdNVvH0VC3pRctdqwhtkZiGcX8"
-						}
+						
 					]
 				},
         "ExecutionOrder": 2,
@@ -52,9 +48,9 @@
     "$values": [
       {
         "$type": "TaskExecuter.Entities.DbConnection, TaskExecuter",
-        "Name": "Petroarsa_Test",
+        "Name": "CAC",
         "Driver": "SQL",
-        "ConnectionString": "Data Source=SVRSFT;Initial Catalog=TEST_SALESF;User ID=sa;Password=Petroarsa01",
+        "ConnectionString": "Data Source=.\\SQLEXPRESS2019;Initial Catalog=CAC;User Id=sa;Password=Password1!",
         "AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
         "AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
         "AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
@@ -66,10 +62,10 @@
   },
   "LogDbConnection": {
 		"$type": "TaskExecuter.Entities.LogDbConnection, TaskExecuter",
-		"DatabaseName": "TEST_SALESF",
+		"DatabaseName": "CAC",
 		"Schema": "dbo",
 		"TableName": "LogTaskExecuter",
-		"ConnectionString": "Data Source=SVRSFT;Initial Catalog=TEST_SALESF;User Id=sa;Password=Petroarsa01",
+		"ConnectionString": "Data Source=.\\SQLEXPRESS2019;Initial Catalog=CAC;User Id=sa;Password=Password1!",
 		"AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
 		"AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
 		"AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
