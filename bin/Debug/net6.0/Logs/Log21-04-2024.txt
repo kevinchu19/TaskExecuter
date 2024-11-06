@@ -1,0 +1,79 @@
+
+Execution time: 20:37:14.3927006
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+No se pudo crear/acceder la tabla de logueo, se detiene la ejecucion.
+
+Execution time: 20:38:09.6628664
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 20:38:38.4814832
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 20:39:11.2607428
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 20:41:14.0406759
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 20:44:02.4456343
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 20:44:50.5243693
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+String or binary data would be truncated.
+The statement has been terminated.
+
+Execution time: 20:46:38.4914473
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+String or binary data would be truncated.
+The statement has been terminated.
+
+Execution time: 20:50:35.0131577
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 22:33:44.2080076
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+NO SE ENCONTRO EL ARCHIVO: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 22:33:55.2583075
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+NO SE ENCONTRO EL ARCHIVO: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 22:34:14.0567040
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 22:34:43.8702111
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 23:08:56.7834037
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 23:09:45.5145540
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 23:10:32.4437086
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+
+
+Execution time: 23:11:03.7184223
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\RenovaciondeToken.json
+

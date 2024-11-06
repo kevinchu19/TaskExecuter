@@ -1,0 +1,4 @@
+
+Execution time: 22:20:46.6491458
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+

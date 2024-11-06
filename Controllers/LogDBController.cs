@@ -77,7 +77,7 @@ namespace TaskExecuter.Controllers
                                         "[Endpoint] [varchar](500) NULL," +
                                         "[JsonRequestEndpoint] [varchar](max) NULL," +
                                         "[Resultset] [varchar](max) NULL," +
-                                        "[StatusCode] [varchar](10) NULL," +
+                                        "[StatusCode] [varchar](max) NULL," +
                                         ")";
                 try
                 {

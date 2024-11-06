@@ -1,0 +1,107 @@
+{
+  "$type": "TaskExecuter.Entities.TaskExecution, TaskExecuter",
+  "Name": "Renovacion De Token Interbanking",
+  "Steps": {
+    "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.Step, TaskExecuter]], System.Private.CoreLib",
+    "$values": [
+
+      {
+        "$type": "TaskExecuter.Entities.ApiEndpointStep, TaskExecuter",
+        "Url": "https://preauth.interbanking.com.ar/cas/oauth2.0/token?scope=openid%2Cprofile",
+        "Verb": "POST",
+		"ContentType": "application/x-www-form-urlencoded",
+		"Headers": {
+					"$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter]], System.Private.CoreLib",
+					"$values": [
+						{
+							"$type": "TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter",
+							"Name": "service",
+							"Value": "https://preapi.interbanking.com.ar/recaudador"
+						}
+					]
+				},
+		"FormKeys": {
+					"$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointFormKey, TaskExecuter]], System.Private.CoreLib",
+					"$values": [
+						{
+							"$type": "TaskExecuter.Entities.ApiEndpointFormKey, TaskExecuter",
+							"Name": "grant_type",
+							"Value": "password"
+						},
+						{
+							"$type": "TaskExecuter.Entities.ApiEndpointFormKey, TaskExecuter",
+							"Name": "username",
+							"Value": "-2|1712771783410|Prueba01"
+						},
+						{
+							"$type": "TaskExecuter.Entities.ApiEndpointFormKey, TaskExecuter",
+							"Name": "password",
+							"Value": "Prueba02+"
+						},
+						{
+							"$type": "TaskExecuter.Entities.ApiEndpointFormKey, TaskExecuter",
+							"Name": "client_id",
+							"Value": "pg0HZdZvOfTJDKgf6YJUnwmA0Ioa"
+						}
+					]
+				},
+        "ExecutionOrder": 1,
+        "Name": "InterbankingEndpoint",
+        "Type": "ApiEndpointStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null
+      },
+	  {
+        "$type": "TaskExecuter.Entities.DBQueryStep, TaskExecuter",
+        "Sentence": "Alm_PostTokenForWMSResponse",
+        "DbConnectionName": "CAC_Test",
+        "QueryParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "@HttpStatusResponse": ""
+        },
+        "DataResult": null,
+        "ExecutionOrder": 2,
+        "Name": "Alm_PostTokenForWMSResponse",
+        "Type": "DBQueryStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null,
+        "PreviousStepReference": "InterbankingEndpoint"
+      }
+    ]
+  },
+  "DbConnections": {
+    "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.DbConnection, TaskExecuter]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "TaskExecuter.Entities.DbConnection, TaskExecuter",
+        "Name": "CAC_Test",
+        "Driver": "SQL",
+        "ConnectionString": "Data Source=.\\SQLEXPRESS2019;Initial Catalog=CAC;User Id=sa;Password=Password1!",
+        "AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+        "AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+        "AdoNetCommandTimeOut": 0,
+        "ParameterPrefix": "@",
+        "PkFunction": "SET @newId = SCOPE_IDENTITY()"
+      }
+    ]
+  },
+  "LogDbConnection": {
+		"$type": "TaskExecuter.Entities.LogDbConnection, TaskExecuter",
+		"DatabaseName": "CAC",
+		"Schema": "dbo",
+		"TableName": "LogTaskExecuter",
+		"ConnectionString": "Data Source=.\\SQLEXPRESS2019;Initial Catalog=CAC;User Id=sa;Password=Password1!",
+		"AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+		"AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+		"AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+		"AdoNetCommandTimeOut": 0
+	},
+  "ExternalParameters": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  }
+}

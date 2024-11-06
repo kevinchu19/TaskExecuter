@@ -31,25 +31,37 @@ namespace TaskExecuter.Controllers
             Uri? requestUri = null;
             Uri.TryCreate(step.Url, UriKind.Absolute, out requestUri);
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(requestUri);
-            request.ContentType = "application/json";
+            request.ContentType =step.ContentType != null? step.ContentType:"application/json";
             request.Method = step.Verb;
 
 
-
-            foreach (var item in ResolveHeaders(step.Headers, result))
+            foreach (var item in ResolveValues<ApiEndpointHeader>("headers",step.Headers, result))
             {
                 request.Headers.Add(item.Name, item.Value);
 
             }
+            //Para application/x-www-form-urlencoded
+            var data = new Dictionary<string, string>();
 
-            string jsonData = "";
+            foreach (var item in ResolveValues<ApiEndpointFormKey>("formKeys",step.FormKeys,result))
+            {
+                //TaskFileController.WriteLogFile(item.Value);
+                data.Add(item.Name, item.Value);
+            }
+
+  
+            string content = step.ContentType == "application/x-www-form-urlencoded" ? string.Join("&", data.Select(x => $"{Uri.EscapeDataString(x.Key)}={x.Value}")):"";
+            
+            
+
             if (step.Verb == "POST" || step.Verb == "PUT")
             {
-                if(result!=null)
-                    jsonData = JsonConvert.SerializeObject(result);
+                if(result!=null )
+                    if(result.Count() > 0)
+                        content = JsonConvert.SerializeObject(result);
                 using (var streamWriter = new StreamWriter(request.GetRequestStream()))
                 {
-                    streamWriter.Write(jsonData);
+                    streamWriter.Write(content);
                 }
             }
 
@@ -64,33 +76,38 @@ namespace TaskExecuter.Controllers
             }
 
             //guardamos log.
-            saveLog(step, jsonData.ToString());
+            saveLog(step, content.ToString());
             step.Url = originalURL;
 
             return step;
 
         }
 
-        private IEnumerable<ApiEndpointHeader>? ResolveHeaders(List<ApiEndpointHeader>? headers, Dictionary<string, object>? result)
+        //Para Headers variables y forms
+        private IEnumerable<T> ResolveValues <T>(string valueToSearch,List<T> values, Dictionary<string, object>? result)
         {
             //Si el paso anterior contiene un campo $headers con una coleccion, toma el json de dicho campo para armar los headers
-            object dynamicHeaders;
-            if (result.TryGetValue("$headers", out dynamicHeaders))
+            object dynamicValues;
+            if (result != null)
             {
-                result.Remove("$headers");
-                try
-                {
-                    return JsonConvert.DeserializeObject<IEnumerable<ApiEndpointHeader>>(dynamicHeaders.ToString());
-                }
-                catch (Exception)
-                {
 
-                    return headers;
-                }
+                if (result.TryGetValue($"${valueToSearch}", out dynamicValues))
+                {
+                    result.Remove($"${valueToSearch}");
+                    try
+                    {
+                        
+                        return JsonConvert.DeserializeObject<IEnumerable<T>>(dynamicValues.ToString());
+                    }
+                    catch (Exception ex)
+                    {
+                        return values;
+                    }
                 
-            };
+                };
 
-            return headers;
+            }
+            return values;
         }
 
         public void saveLog(Entities.ApiEndpointStep pStep, string pJsonRequest)

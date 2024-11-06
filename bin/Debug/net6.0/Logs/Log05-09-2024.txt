@@ -1,0 +1,29 @@
+
+Execution time: 14:32:13.9975173
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 14:37:58.2668068
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 14:39:30.0568005
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 14:42:35.0258043
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 14:47:13.3585941
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 17:52:16.4561972
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+False
+11111111-1111-1111-1111-111111111111
+True
+True
+<DTE><Documento ID="1"><Encabezado><IdDoc><Ambiente>2</Ambiente><TipoServicio>10</TipoServicio><Tipo>01</Tipo><Serie>SETT</Serie><Numero>1</Numero><NumeroInterno>1</NumeroInterno><FechaEmis>2024-08-26</FechaEmis><MedioPago>1</MedioPago><FechaVenc>2024-08-26</FechaVenc><TipoNegociacion>1</TipoNegociacion><Plazo>0</Plazo></IdDoc><Emisor><TipoContribuyente>1</TipoContribuyente><RegimenContable>05</RegimenContable><IDEmisor>901841721</IDEmisor><NmbEmisor>IMPALSA Colombia S.A.S.</NmbEmisor><NombreEmisor><PrimerNombre>IMPALSA Colombia S.A.S.</PrimerNombre></NombreEmisor><CodigoEmisor><TpoCdgIntEmisor>TpoObl</TpoCdgIntEmisor><CdgIntEmisor>O-23</CdgIntEmisor></CodigoEmisor><DomFiscal><Calle>CL 93 NO. 15 59 OF 403</Calle><Departamento>11</Departamento><Ciudad>11001</Ciudad><Pais>CO</Pais><CodigoPostal>110221</CodigoPostal></DomFiscal><LugarExped><Calle>CL 93 NO. 15 59 OF 403</Calle><Departamento>11</Departamento><Ciudad>11001</Ciudad><Pais>CO</Pais><CodigoPostal>110221</CodigoPostal></LugarExped><ContactoEmisor><Nombre>IMPALSA Colombia S.A.S.</Nombre><eMail>facturación@impalsa.com</eMail></ContactoEmisor></Emisor><Receptor><RegimenContableR>49</RegimenContableR><TipoContribuyenteR>1</TipoContribuyenteR><DocRecep><TipoDocRecep>31</TipoDocRecep><NroDocRecep>56467546</NroDocRecep></DocRecep><NmbRecep>Cliente Contado p/ E-Commerce - Consumidor Final</NmbRecep><NombreRecep><PrimerNombre>Cliente Contado p/ E-Commerce - Consumidor Final</PrimerNombre></NombreRecep><CodigoReceptor><TpoCdgIntRecep>TpoObl</TpoCdgIntRecep><CdgIntRecep>O-49</CdgIntRecep></CodigoReceptor><CdgSucursal/><DomFiscalRcp><Calle>Almagro 245</Calle><Departamento>05</Departamento><Ciudad>5001</Ciudad><Pais>056</Pais><CodigoPostal>1000</CodigoPostal></DomFiscalRcp><LugarRecep><Calle>Almagro 245</Calle><Departamento>05</Departamento><Ciudad>5001</Ciudad><Pais>056</Pais><CodigoPostal>1000</CodigoPostal></LugarRecep><ContactoReceptor><Nombre>Cliente Contado p/ E-Commerce - Consumidor Final</Nombre><eMail>aa@gmail.com</eMail><Telefono>4503-8521</Telefono></ContactoReceptor></Receptor><Totales><Moneda>COP</Moneda><FctConv>0</FctConv><SubTotal>1000000</SubTotal><MntBase>1000000</MntBase><MntImp>190000</MntImp><VlrPagar>1190000</VlrPagar></Totales><Impuestos><TipoImp>01</TipoImp><TasaImp>19</TasaImp><MontoBaseImp>1000000</MontoBaseImp><MontoImp>190000</MontoImp></Impuestos></Encabezado><Detalle><NroLinDet>1</NroLinDet><CdgItem><TpoCodigo>999</TpoCodigo><VlrCodigo>DAX135-1600</VlrCodigo></CdgItem><DscItem>Hidrolavadora 1600W</DscItem><QtyItem>10</QtyItem><UnmdItem>NIU</UnmdItem><PrcBrutoItem>100000</PrcBrutoItem><ImpuestosDet><TipoImp>01</TipoImp><TasaImp>19.00000</TasaImp><MontoBaseImp>1000000.00</MontoBaseImp><MontoImp>190000.0000</MontoImp></ImpuestosDet><MontoTotalItem>1000000</MontoTotalItem></Detalle><CAE><Tipo>01</Tipo><Serie>SETT</Serie><NumeroInicial>1</NumeroInicial><NumeroFinal>5000000</NumeroFinal><NroResolucion>17860000001</NroResolucion><FechaResolucion>1999-11-30</FechaResolucion><ClaveTC>fc8eac422eba16e22ffd86cf94b3f40a6e38162c</ClaveTC><Plazo>2030-01-19</Plazo></CAE></Documento></DTE>

@@ -1,0 +1,104 @@
+{
+  "$type": "TaskExecuter.Entities.TaskExecution, TaskExecuter",
+  "Name": "Recupera Transferencias Interbanking",
+  "Steps": {
+    "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.Step, TaskExecuter]], System.Private.CoreLib",
+    "$values": [
+	  {
+        "$type": "TaskExecuter.Entities.DBQueryStep, TaskExecuter",
+        "Sentence": "Alm_GetTransferenciasInterbankingRequest",
+        "DbConnectionName": "CAC_Test",
+        "QueryParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "@Limit": "10"
+        },
+        "DataResult": null,
+        "ExecutionOrder": 1,
+        "Name": "Alm_GetTransferenciasInterbankingRequest",
+        "Type": "DBQueryStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null,
+        "PreviousStepReference": ""
+      },
+      {
+        "$type": "TaskExecuter.Entities.ApiEndpointStep, TaskExecuter",
+        "Url": "https://preapi.interbanking.com.ar/api/recaudador/v1.0.0/consultas/transferencias?idDeudaDesde={idDeuda}&idDeudaHasta={idDeuda}",
+        "Verb": "POST",
+		"ContentType": "application/json",
+		"Headers": {
+          "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter]], System.Private.CoreLib",
+		  "$values":[]
+        },
+		"RouteVariables": {
+					"$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointParam, TaskExecuter]],System.Private.CoreLib",
+					"$values": [
+						{
+							"$type": "TaskExecuter.Entities.ApiEndpointParam, TaskExecuter",
+							"Name": "{idDeuda}",
+							"Value": "idDeuda"
+						}
+					]
+				},
+		"ExecutionOrder": 2,
+        "Name": "InterbankingEndpoint",
+        "Type": "ApiEndpointStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null,
+		"PreviousStepReference": "Alm_GetTransferenciasInterbankingRequest"
+      },
+	  {
+        "$type": "TaskExecuter.Entities.DBQueryStep, TaskExecuter",
+        "Sentence": "Alm_GetTransferenciasInterbankingResponse",
+        "DbConnectionName": "CAC_Test",
+        "QueryParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "@HttpStatusResponse": ""
+        },
+        "DataResult": null,
+        "ExecutionOrder": 3,
+        "Name": "Alm_GetTransferenciasInterbankingResponse",
+        "Type": "DBQueryStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null,
+        "PreviousStepReference": "InterbankingEndpoint"
+      }
+    ]
+  },
+  "DbConnections": {
+    "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.DbConnection, TaskExecuter]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "TaskExecuter.Entities.DbConnection, TaskExecuter",
+        "Name": "CAC_Test",
+        "Driver": "SQL",
+		"ConnectionString": "Data Source=172.20.128.197\\MSSQLSERVER2, 1438;Initial Catalog=CAC;User Id=sa;Password=Softland@1",
+        "AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+        "AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+        "AdoNetCommandTimeOut": 0,
+        "ParameterPrefix": "@",
+        "PkFunction": "SET @newId = SCOPE_IDENTITY()"
+      }
+    ]
+  },
+  "LogDbConnection": {
+		"$type": "TaskExecuter.Entities.LogDbConnection, TaskExecuter",
+		"DatabaseName": "CAC",
+		"Schema": "dbo",
+		"TableName": "LogTaskExecuter",
+		"ConnectionString": "Data Source=172.20.128.197\\MSSQLSERVER2, 1438;Initial Catalog=CAC;User Id=sa;Password=Softland@1",
+		"AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+		"AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+		"AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+		"AdoNetCommandTimeOut": 0
+	},
+  "ExternalParameters": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  }
+}

@@ -1,0 +1,90 @@
+
+Execution time: 22:37:29.9594087
+Task JSON path: H:\Mi
+
+NO SE ENCONTRO EL ARCHIVO: H:\Mi
+
+
+Execution time: 22:38:12.4119167
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 22:38:38.8401133
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 22:40:21.0780018
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 22:40:37.6611582
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 22:49:43.1007673
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 22:52:04.5583764
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 22:55:54.7882650
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 22:56:28.5884258
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 22:59:34.7516975
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:01:58.4691368
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:04:41.5378255
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:05:28.4011196
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:06:10.5921321
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:06:47.5647148
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:08:46.5163713
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:09:50.2636963
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:12:33.3193218
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:14:03.3643399
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:16:18.8810427
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:32:24.8277947
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+
+
+Execution time: 23:33:41.8466084
+Task JSON path: H:\Mi unidad\AMI\Implementacion GoSocket Colombia\Factura Electronica\Task\GoSocketSendDocumentToAuthority.json
+

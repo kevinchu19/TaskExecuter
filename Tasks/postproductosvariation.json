@@ -1,0 +1,101 @@
+{
+  "$type": "TaskExecuter.Entities.TaskExecution, TaskExecuter",
+  "Name": "Envio de Precios",
+  "Steps": {
+    "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.Step, TaskExecuter]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "TaskExecuter.Entities.DBQueryStep, TaskExecuter",
+        "Sentence": "USR_ALM_POSTVARIATION_REQUEST",
+        "DbConnectionName": "APIDRIFTE",
+        "QueryParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "@Limit": "1"
+        },
+        "DataResult": null,
+        "ExecutionOrder": 1,
+        "Name": "USR_ALM_POSTVARIATION_REQUEST",
+        "Type": "DBQueryStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null,
+        "PreviousStepReference": ""
+      },
+      {
+        "$type": "TaskExecuter.Entities.ApiEndpointStep, TaskExecuter",
+        "Url": "https://hesparren.38sur.net/wp-json/wc/v3/products/{product_id}/variations/{id}/",
+        "Verb": "PUT",
+        "Headers": {
+          "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter]], System.Private.CoreLib",
+          "$values": [
+            {
+                "$type": "TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter",
+                "Name": "Authorization",
+                "Value": "Basic Y2tfZTk4NzBjZDA4MjMwOTQyYjNmMTM5Mzk3NGYxMTBmMzM3NzA3Zjk5NDpjc19lNzYyNzAxMmUxOTJmMzQwYzcwZWVjYTNlNjZjZGE2MDMxMTBhNjIx"
+            },
+			{
+                "$type": "TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter",
+                "Name": "Accept",
+                "Value": "application/json"
+            }
+          ]
+        },
+        "RouteVariables": {
+          "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointParam, TaskExecuter]],System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "TaskExecuter.Entities.ApiEndpointParam, TaskExecuter",
+              "Name": "{id}",
+              "Value": "id"
+            },
+           {
+              "$type": "TaskExecuter.Entities.ApiEndpointParam, TaskExecuter",
+              "Name": "{product_id}",
+              "Value": "product_id"
+            }
+          ]
+        },
+        "ExecutionOrder": 2,
+        "Name": "WooEndpoint",
+        "Type": "ApiEndpointStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null,
+        "PreviousStepReference": "USR_ALM_POSTVARIATION_REQUEST"
+      }
+    ]
+  },
+ "LogDbConnection": {
+		"$type": "TaskExecuter.Entities.LogDbConnection, TaskExecuter",
+		"DatabaseName": "APIDRIFTER",
+		"Schema": "dbo",
+		"TableName": "LogTaskExecuter",
+		"ConnectionString": "Data Source=.;Initial Catalog=APIDRIFTER;User Id=sa;Password=Password1!;",
+		"AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+		"AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+		"AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+		"AdoNetCommandTimeOut": 0
+	},
+  "DbConnections": {
+    "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.DbConnection, TaskExecuter]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "TaskExecuter.Entities.DbConnection, TaskExecuter",
+        "Name": "APIDRIFTER",
+        "Driver": "SQL",
+        "ConnectionString": "Data Source=.;Initial Catalog=APIDRIFTER;User Id=sa;Password=Password1!;",
+        "AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+        "AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+        "AdoNetCommandTimeOut": 0,
+        "ParameterPrefix": "@",
+        "PkFunction": "SET @newId = SCOPE_IDENTITY()"
+      }
+    ]
+  },
+  "ExternalParameters": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  }
+}

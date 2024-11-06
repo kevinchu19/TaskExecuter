@@ -1,0 +1,52 @@
+
+Execution time: 00:35:20.3371994
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
+Login failed for user 'sa'.
+Login failed for user 'sa'.
+No se pudo crear/acceder la tabla de logueo, se detiene la ejecucion.
+
+Execution time: 00:35:55.5937394
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
+A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - No hay ningún proceso en el otro extremo de la canalización.)
+A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - No hay ningún proceso en el otro extremo de la canalización.)
+No se pudo crear/acceder la tabla de logueo, se detiene la ejecucion.
+
+Execution time: 00:36:27.3589267
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
+Invalid object name 'APIDRIFTE.INFORMATION_SCHEMA.TABLES'.
+Database 'APIDRIFTE' does not exist.
+No se pudo crear/acceder la tabla de logueo, se detiene la ejecucion.
+
+Execution time: 00:36:46.4038334
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
+Invalid object name 'APIDRIFTE.INFORMATION_SCHEMA.TABLES'.
+Database 'APIDRIFTE' does not exist.
+No se pudo crear/acceder la tabla de logueo, se detiene la ejecucion.
+
+Execution time: 00:37:10.0738549
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
+
+Execution time: 00:37:43.1265401
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
+
+Execution time: 00:45:54.8098948
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
+
+Execution time: 00:46:23.9763282
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
+
+Execution time: 00:47:09.6788138
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
+
+Execution time: 00:51:01.9360980
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
