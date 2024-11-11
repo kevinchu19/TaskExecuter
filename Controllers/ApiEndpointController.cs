@@ -54,7 +54,7 @@ namespace TaskExecuter.Controllers
             
             
 
-            if (step.Verb == "POST" || step.Verb == "PUT")
+            if (step.Verb == "POST" || step.Verb == "PUT" || step.Verb == "PATCH")
             {
                 if(result!=null )
                     if(result.Count() > 0)
