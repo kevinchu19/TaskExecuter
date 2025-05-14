@@ -25,6 +25,7 @@
       {
         "$type": "TaskExecuter.Entities.ApiEndpointStep, TaskExecuter",
         "Url": "https://hesparren.38sur.net/wp-json/wc/v3/products/{product_id}/variations/{id}/",
+		"TimeoutInSecs": 180,
         "Verb": "PUT",
         "Headers": {
           "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter]], System.Private.CoreLib",

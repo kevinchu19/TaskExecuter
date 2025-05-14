@@ -1,0 +1,8 @@
+
+Execution time: 15:40:31.0811576
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+
+
+Execution time: 15:41:13.2813931
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\postproductosvariation.json
+

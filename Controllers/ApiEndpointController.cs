@@ -31,6 +31,7 @@ namespace TaskExecuter.Controllers
             Uri? requestUri = null;
             Uri.TryCreate(step.Url, UriKind.Absolute, out requestUri);
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(requestUri);
+            request.Timeout = step.TimeoutInSecs * 1000;
             request.ContentType =step.ContentType != null? step.ContentType:"application/json";
             request.Method = step.Verb;
 

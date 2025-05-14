@@ -14,6 +14,7 @@ namespace TaskExecuter.Entities
         private Dictionary<String, String> ResponseResults { get; set; } = new Dictionary<String, String>();
 
         public String Url { get; set; } = String.Empty;
+        public int TimeoutInSecs { get; set; } = 100;
         public String Verb { get; set; } = String.Empty;
         public String? ContentType { get; set; }
         public List<ApiEndpointHeader> Headers { get; set; } = new List<ApiEndpointHeader>();
