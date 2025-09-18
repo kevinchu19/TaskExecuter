@@ -1,0 +1,78 @@
+
+Execution time: 11:59:39.6426556
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\InterbankingRenovaciondeToken.json
+
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+No se pudo crear/acceder la tabla de logueo, se detiene la ejecucion.
+
+Execution time: 12:00:09.7311291
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\InterbankingRenovaciondeToken.json
+
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+No se pudo crear/acceder la tabla de logueo, se detiene la ejecucion.
+
+Execution time: 12:07:48.8331291
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\InterbankingRenovaciondeToken.json
+
+
+Execution time: 12:13:55.1003657
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\InterbankingRenovaciondeToken.json
+
+
+Execution time: 12:31:15.9781631
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\InterbankingRenovaciondeToken.json
+
+The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.
+
+Execution time: 12:31:54.1222177
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\InterbankingRenovaciondeToken.json
+
+The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.
+
+Execution time: 12:43:53.9588924
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\InterbankingRenovaciondeToken.json
+
+
+Execution time: 12:58:29.3802682
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\Pruebatimeout.json
+
+
+Execution time: 12:59:25.1382232
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\Pruebatimeout.json
+
+
+Execution time: 13:05:41.0082173
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\Pruebatimeout.json
+
+
+Execution time: 13:15:50.0410756
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\Pruebatimeout.json
+
+
+Execution time: 13:16:38.5504569
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\Pruebatimeout.json
+
+
+Execution time: 13:18:01.6057320
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\Pruebatimeout.json
+
+
+Execution time: 13:21:47.8845699
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\Pruebatimeout.json
+
+
+Execution time: 13:22:41.1880889
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\InterbankingRenovacionDeToken.json
+
+
+Execution time: 13:23:34.6415394
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\InterbankingRenovacionDeToken.json
+

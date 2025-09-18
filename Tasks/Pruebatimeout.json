@@ -1,0 +1,58 @@
+{
+  "$type": "TaskExecuter.Entities.TaskExecution, TaskExecuter",
+  "Name": "Prueba timeout",
+  "Steps": {
+    "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.Step, TaskExecuter]], System.Private.CoreLib",
+    "$values": [
+
+      {
+        "$type": "TaskExecuter.Entities.ApiEndpointStep, TaskExecuter",
+        "Url": "http://www.google.com:81/",
+        "Verb": "GET",
+		"Headers": {
+					"$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.ApiEndpointHeader, TaskExecuter]], System.Private.CoreLib",
+					"$values": []
+				},
+        "ExecutionOrder": 1,
+		"TimeoutInSecs": 5,
+        "Name": "InterbankingEndpoint",
+        "Type": "ApiEndpointStep",
+        "ExternalParameters": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "ReturnResult": null
+      }
+    ]
+  },
+  "DbConnections": {
+    "$type": "System.Collections.Generic.List`1[[TaskExecuter.Entities.DbConnection, TaskExecuter]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "TaskExecuter.Entities.DbConnection, TaskExecuter",
+        "Name": "CAC_Test",
+        "Driver": "SQL",
+        "ConnectionString": "Data Source=.\\SQLEXPRESS2019;Initial Catalog=CAC;User Id=sa;Password=Password1!",
+        "AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+        "AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+        "AdoNetCommandTimeOut": 0,
+        "ParameterPrefix": "@",
+        "PkFunction": "SET @newId = SCOPE_IDENTITY()"
+      }
+    ]
+  },
+  "LogDbConnection": {
+		"$type": "TaskExecuter.Entities.LogDbConnection, TaskExecuter",
+		"DatabaseName": "CAC",
+		"Schema": "dbo",
+		"TableName": "LogTaskExecuter",
+		"ConnectionString": "Data Source=.\\SQLEXPRESS2019;Initial Catalog=CAC;User Id=sa;Password=Password1!",
+		"AdoNetAssemblyName": "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+		"AdoNetConnectionTypeName": "System.Data.SqlClient.SqlConnection",
+		"AdoNetCommandTypeName": "System.Data.SqlClient.SqlCommand",
+		"AdoNetCommandTimeOut": 0
+	},
+  "ExternalParameters": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  }
+}

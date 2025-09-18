@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -60,6 +61,12 @@ namespace TaskExecuter.Controllers
             if (!logDBController.VerifyLogTable(logDbConnection))
             {
                 if (logDBController.CreateLogTable(logDbConnection))
+                    returnValue = true;
+            }
+            //Verificamos si tiene campos de log agregados en ultima version
+            if (!logDBController.VerifyLogFields(logDbConnection))
+            {
+                if (logDBController.AddLogFields(logDbConnection))
                     returnValue = true;
             }
             else
@@ -193,7 +200,7 @@ namespace TaskExecuter.Controllers
 
 
                                 var auxResultPair = new Dictionary<string, object?>();
-                                auxResultPair.Add("HttpStatusResponse", stepApi.Response.StatusCode);
+                                auxResultPair.Add("HttpStatusResponse", stepApi.Response?.StatusCode ?? HttpStatusCode.RequestTimeout);
 
                                 foreach (var results in stepApi.RouteVariables)
                                 {

@@ -9,6 +9,7 @@ namespace TaskExecuter.Entities
     public class LogDBEntity
     {
         public DateTime ExecutionDate { get; set; }
+        public DateTime ExecutionDateFinish { get; set; }
         public string StepName { get; set; }
         public string StepType { get; set; }
         public string StepOrder { get; set; }
@@ -22,6 +23,7 @@ namespace TaskExecuter.Entities
         public LogDBEntity()
         {
             ExecutionDate = DateTime.Now;
+            ExecutionDateFinish = DateTime.Now;
             StepName = "";
             StepType = "";
             StepOrder = "";
