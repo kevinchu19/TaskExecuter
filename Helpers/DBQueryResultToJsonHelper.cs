@@ -25,13 +25,21 @@ namespace TaskExecuter.Helpers
         }
 
         private static Dictionary<string, object> SerializeRow(IEnumerable<string> cols,
-                                                System.Data.IDataReader reader)
+                                         System.Data.IDataReader reader)
         {
             var result = new Dictionary<string, object>();
             foreach (var col in cols)
                 try
                 {
                     var jsonString = (string)reader[col];
+
+                    // Primero verificar si todo el JSON está envuelto en comillas (como string escapado)
+                    if (jsonString.StartsWith("\"") && jsonString.EndsWith("\"") && jsonString.Length > 2)
+                    {
+                        // Remover las comillas exteriores y des-escapar
+                        jsonString = jsonString.Substring(1, jsonString.Length - 2);
+                        jsonString = jsonString.Replace("\\\"", "\"");
+                    }
 
                     // Corregir booleanos que están como strings en el JSON
                     jsonString = jsonString.Replace("\"true\"", "true")
@@ -72,7 +80,6 @@ namespace TaskExecuter.Helpers
 
                     // Convertir a string y verificar si es booleano
                     string stringValue = value.ToString().Trim();
-
                     if (stringValue.Equals("true", StringComparison.OrdinalIgnoreCase) ||
                         stringValue.Equals("1", StringComparison.Ordinal))
                     {
