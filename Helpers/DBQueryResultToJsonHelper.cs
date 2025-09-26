@@ -45,8 +45,16 @@ namespace TaskExecuter.Helpers
                         @"""$1"":""$2"""
                     );
 
-                    // También limpiar arrays vacíos escapados: "[]" -> []
-                    jsonString = jsonString.Replace("\"[]\"", "[]");
+                    // Limpiar arrays que están como strings escapados
+                    jsonString = System.Text.RegularExpressions.Regex.Replace(
+                        jsonString,
+                        @"""(\w+)"":""\[([^\]]*)\]""",
+                        match => {
+                            var fieldName = match.Groups[1].Value;
+                            var arrayContent = match.Groups[2].Value.Replace(@"\""", @"""");
+                            return $@"""{fieldName}"":[{arrayContent}]";
+                        }
+                    );
 
                     var obj = JsonConvert.DeserializeObject<object>(jsonString);
                     result.Add(col, obj);
