@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -23,21 +24,61 @@ namespace TaskExecuter.Helpers
             return results;
         }
 
-
         private static Dictionary<string, object> SerializeRow(IEnumerable<string> cols,
-                                                        System.Data.IDataReader reader)
+                                                System.Data.IDataReader reader)
         {
             var result = new Dictionary<string, object>();
             foreach (var col in cols)
                 try
                 {
-                    var obj = JsonConvert.DeserializeObject<object>((string)reader[col]);
-                    result.Add(col, obj);
+                    var jsonString = (string)reader[col];
 
+                    // Corregir booleanos que están como strings en el JSON
+                    jsonString = jsonString.Replace("\"true\"", "true")
+                                           .Replace("\"false\"", "false");
+
+                    // Limpiar strings que tienen comillas dobles escapadas innecesarias
+                    // Patrón: "campo":"\"valor\"" -> "campo":"valor"
+                    jsonString = System.Text.RegularExpressions.Regex.Replace(
+                        jsonString,
+                        @"""(\w+)"":""\\""([^""]*?)\\""""",
+                        @"""$1"":""$2"""
+                    );
+
+                    // También limpiar arrays vacíos escapados: "[]" -> []
+                    jsonString = jsonString.Replace("\"[]\"", "[]");
+
+                    var obj = JsonConvert.DeserializeObject<object>(jsonString);
+                    result.Add(col, obj);
                 }
                 catch
                 {
-                    result.Add(col, reader[col]);
+                    var value = reader[col];
+
+                    // Manejar DBNull
+                    if (value == DBNull.Value || value == null)
+                    {
+                        result.Add(col, null);
+                        continue;
+                    }
+
+                    // Convertir a string y verificar si es booleano
+                    string stringValue = value.ToString().Trim();
+
+                    if (stringValue.Equals("true", StringComparison.OrdinalIgnoreCase) ||
+                        stringValue.Equals("1", StringComparison.Ordinal))
+                    {
+                        result.Add(col, true);
+                    }
+                    else if (stringValue.Equals("false", StringComparison.OrdinalIgnoreCase) ||
+                             stringValue.Equals("0", StringComparison.Ordinal))
+                    {
+                        result.Add(col, false);
+                    }
+                    else
+                    {
+                        result.Add(col, value);
+                    }
                 }
             return result;
         }

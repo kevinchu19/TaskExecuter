@@ -205,8 +205,8 @@ namespace TaskExecuter.Controllers
                                         "[StatusCode]" +
                                         ") " +
                                         "SELECT " +
-                                        "'" + logDBEntity.ExecutionDate.ToString("yyyy-MM-dd HH:mm:ss.fff") + "' AS ExecutionDateTime, " +
-                                        "'" + logDBEntity.ExecutionDateFinish.ToString("yyyy-MM-dd HH:mm:ss.fff") + "' AS ExecutionDateTimeFinish, " +
+                                        "CONVERT(DATETIME,'" + logDBEntity.ExecutionDate.ToString("yyyy-MM-dd HH:mm:ss.fff") + "',120) AS ExecutionDateTime, " +
+                                        "CONVERT(DATETIME,'" + logDBEntity.ExecutionDateFinish.ToString("yyyy-MM-dd HH:mm:ss.fff") + "',120) AS ExecutionDateTimeFinish, " +
                                         "'" + taskName + "'" + " AS TaskName, " +
                                         "'" + logDBEntity.StepName.Replace("'","''") + "'" + " AS StepName, "+
                                         "'" + logDBEntity.StepType.Replace("'", "''") + "'" + " AS StepType, " +
