@@ -41,6 +41,7 @@ namespace TaskExecuter.Controllers
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                TaskFileController.WriteLogFile(ex.Message);
                 returnValue = false;
             }
             finally
