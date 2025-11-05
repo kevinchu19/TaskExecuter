@@ -1,0 +1,12 @@
+
+Execution time: 11:46:10.5393041
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+
+Execution time: 11:48:07.8947586
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+
+
+Execution time: 11:49:16.1466754
+Task JSON path: C:\Users\ktchu\source\repos\TaskExecuter\Tasks\enviodeclientes.json
+

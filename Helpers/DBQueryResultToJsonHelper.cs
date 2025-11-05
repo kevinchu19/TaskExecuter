@@ -117,6 +117,16 @@ namespace TaskExecuter.Helpers
                 stringValue = stringValue.Substring(1, stringValue.Length - 2);
             }
 
+            // Verificar booleanos en formato string
+            if (stringValue.Equals("true", StringComparison.OrdinalIgnoreCase))
+            {
+                return true;
+            }
+            else if (stringValue.Equals("false", StringComparison.OrdinalIgnoreCase))
+            {
+                return false;
+            }
+
             // Si el tipo del campo es string, devolver como string sin conversión
             if (fieldType == typeof(string))
             {
@@ -144,15 +154,7 @@ namespace TaskExecuter.Helpers
 
             // Para otros tipos, evaluar el contenido del string
 
-            // Verificar booleanos en formato string
-            if (stringValue.Equals("true", StringComparison.OrdinalIgnoreCase))
-            {
-                return true;
-            }
-            else if (stringValue.Equals("false", StringComparison.OrdinalIgnoreCase))
-            {
-                return false;
-            }
+            
 
             // Intentar parsear como número solo si el tipo NO es string
             if (decimal.TryParse(stringValue, out decimal decimalValue))
